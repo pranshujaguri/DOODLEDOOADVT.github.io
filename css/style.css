@@ -1,13 +1,6 @@
 
 /*
-Template Name: Rex
-Author: MarkUps
-Author URI: http://www.markups.io/
-Description: Rex - One Page Multipurpose Business HTML5 Template.
-Version: 1.0
-Tags: light, white,blog,business,multipurpose,one page, single page, custom-colors,Bootstrap,responsive, html5, css3
-*/
-
+Template Name: DOODLE DOO
 
 /* Table of Content
 ==================================================
@@ -294,6 +287,7 @@ img{
 	transition: all 0.5s;
 }
 .logo {
+        margin-left: 32px;
 	height: 100px;  
 	width: 85px;
 	margin-right: 45px;
@@ -314,6 +308,7 @@ img{
 	padding-top: 30px;	
 }
 .logo img {
+        margin-left: 44px;
 	height: 100%;
 	width: 100%;
 }
@@ -1708,6 +1703,7 @@ display: flex;
 	padding: 12px 40px;  
 }
 #google-map{
+        border: 1px solid;
 	display: inline;
 	float: left;	
 	width: 100%;
