@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DOODLE DOO</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../rex/Images/favicon-32x32.png"/>
+    <!-- Font Awesome -->
+    <link href="../rex/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../rex/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../rex/css/slick.css"/> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../rex/css/animate.css"/>  
+    <!-- Theme color -->
+    <link id="switcher" href="../rex/css/theme-color/default.css" rel="stylesheet">
+    
+    <!-- Main Style -->
+    <link href="../rex/css/doodle.css" rel="stylesheet">
+    <link href="../rex/css/style.css" rel="stylesheet">
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+    .logo img {
+        max-width:100%;
+    height: 45%;
+    width: 22%;
+    margin-top: -31px;
+    position: fixed;
+}
+      @media (max-width: 769px) {
+.logo img {
+  height: 45%;
+    margin-left: 33px;
+    margin-top: -25px;
+    width: 28%;
+    max-width:100%;
+    
+          }
+      }
+      
+    </style>
+  <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="http://demo.web3designs.com/jquery-easing.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			if (!$.browser.msie) {
+				var a = 0;
+				for (; a < 6; a += 1) {
+					setTimeout(function b() {
+						var a = Math.random() * 1e3 + 4e3
+							, c = $("<div />", {
+								"class": "smoke"
+								, css: {
+									opacity: -2
+									, left: Math.random() * 100 + 30
+								}
+							});
+						$(c).appendTo("#viewport");
+						$.when($(c).animate({
+							opacity: 1
+						}, {
+							duration: a / 1
+							, easing: "linear"
+							, queue: false
+							, complete: function () {
+								$(c).animate({
+									opacity: 0
+								}, {
+									duration: a / 2
+									, easing: "linear"
+									, queue: false
+								})
+							}
+						}), $(c).animate({
+							bottom: $("#viewport").height()
+						}, {
+							duration: a
+							, easing: "linear"
+							, queue: false
+						})).then(function () {
+							$(c).remove();
+							b()
+						})
+					}, Math.random() * 3e3)
+				}
+			}
+			else {
+				"use strict";
+				var a = 0;
+				for (; a < 15; a += 1) {
+					setTimeout(function b() {
+						var a = Math.random() * 1e3 + 5e3
+							, c = $("<div />", {
+								"class": "smoke"
+								, css: {
+									left: Math.random() * 100 + 70
+								}
+							});
+						$(c).appendTo("#viewport");
+						$.when($(c).animate({}, {
+							duration: a / 4
+							, easing: "linear"
+							, queue: false
+							, complete: function () {
+								$(c).animate({}, {
+									duration: a / 4
+									, easing: "linear"
+									, queue: false
+								})
+							}
+						}), $(c).animate({
+							bottom: $("#viewport").height()
+						}, {
+							duration: a/2
+							, easing: "linear"
+							, queue: false
+						})).then(function () {
+							$(c).remove();
+							b()
+						})
+					}, Math.random() * 3e3)
+				}
+			}
+		}())
+	</script>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <!--<div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>-->
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->  
+  
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->     
+		  <!-- Image logo  -->
+        <a class="navbar-brand logo" href="index.html"><img src="../rex/Images/favicon-32x32.png.gif" alt="logo"></a> 
+         <!-- <a class="navbar-brand logo imagesize" href="index.html">
+                <img class="img-responsive" src="../Images/favicon-32x32.png.gif" alt="logo">
+                </a>-->
+          
+           <!-- Text logo  -->
+<!--            <a class="navbar-brand logo" href="index.html"><span>Rex</span></a>                      -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li><a href="index.html">Home</a></li>
+           
+            <li><a href="#">TEAM</a></li>                    
+            <li><a href="#">SERVICE</a></li> 
+            <li><a href="#">PORTFOLIO</a></li>
+             <li class="active"><a href="#about">ABOUT</a></li> 
+                        
+           
+          </ul>                            
+        </div><!--/.nav-collapse -->
+       <!--<div class="search-area">
+          <form action="">
+            <input id="search" name="search" type="text" placeholder="What're you looking for ?">
+            <input id="search_submit" value="Rechercher" type="submit">
+          </form>
+        </div>     -->    
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+<div id="viewport" style="
+    margin-left: -3px;
+   
+">
+       <img class="img-responsive" src="../rex/Images/aboutbg%20(1).jpg" alt="img" style="
+    margin-left: 3px;
+    margin-top:100px;
+">
+          </div>
+  <!-- Start Portfolio section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="portfolio-area">
+            <div class="title-area">
+              <h2 class="tittle">Recent portfolio</h2>
+              <span class="tittle-line"></span>
+              
+            </div>
+            <!-- Portfolio content -->
+            <div class="portfolio-content">
+               <!-- Portfolio container -->
+               <div class="portfolio-container">
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/3.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                          <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                        <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/3.jpg" alt="img-1" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <a href="#" class="view-project-btn">Live Demo</a>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/5.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                          <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                        <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/5.jpg" alt="img-2" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <a href="#" class="view-project-btn">Live Demo</a>
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/9.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                           <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                         <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/6.jpg" alt="img-2" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <!--<a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/11.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                          <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                        <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/8.jpg" alt="img-2" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                      <!--  <a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/10.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                          <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                        <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/7.jpg" alt="img-5" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <!--<a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/1.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                          <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                         <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/1.jpg" alt="img-2" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <!--<a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/5.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                         <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                         <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                        <img src="../rex/Images/aboutgallery/Aboutpic/5.jpg" alt="img-2" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                        <!--<a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="single-portfolio">
+                   <div class="single-item">
+                     <img src="../rex/Images/3.png" alt="img">
+                     <div class="single-item-content">
+                        <div class="portfolio-social-icon">
+                           <a class="view-btn" href="#"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <div class="portfolio-title">
+                          <h4></h4>
+                        </div>
+                         <div class="portfolio-detail">
+	                        <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
+	                       <img src="../rex/Images/aboutgallery/Aboutpic/3.jpg" alt="img-1" />
+	                        <h2></h2>
+	                        <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                       <!-- <a href="#" class="view-project-btn">Live Demo</a>-->
+                        </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio section -->
+
+ 
+  <!-- Start Google Map -->
+  <section id="google-map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>  
+  </section>
+  <!-- End Google Map -->
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-top-area">             
+                <a class="footer-logo" href="index.html"><img src="../rex/Images/aboutus.png" alt="Logo" style="
+    margin-top: -57px;
+"></a>              
+              <div class="footer-social">
+                <a class="facebook" href="https://www.facebook.com/DoodleDooDesignNAdvertising?ref=hl"><span class="fa fa-facebook"></span></a>
+                <a class="twitter" href="https://twitter.com/yesprabhakar"><span class="fa fa-twitter"></span></a>
+                <a class="google-plus" href="#"><span class="fa fa-google-plus"></span></a>
+                <a class="youtube" href="#"><span class="fa fa-youtube"></span></a>
+                <a class="linkedin" href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fprofile%2Fview%3Fid%3D23277124%26trk%3Dhp-identity-name"><span class="fa fa-linkedin"></span></a>
+                <a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed by <a rel="nofollow" href="">DOODLE DOO</a></p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../rex/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../rex/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../rex/js/waypoints.js"></script>
+  <script type="text/javascript" src="../rex/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../rex/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../rex/js/custom.js"></script>
+    
+  </body>
+</html>
