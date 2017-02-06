@@ -109,14 +109,14 @@
 }*/
 
 #viewport .smoke {
-    margin-right: 100px;
-    margin-left: -80px;
+  margin-right: 100px;
+  margin-left: -80px;
   position: absolute;
-  width: 900px;
+  width: 700px;
   height: 400px;
   background:url('../Images/Smoke_PNG_Transparent_Image_4.png') ;
-  bottom: 100px; 
- background-repeat: repeat-x;
+  bottom: 175px; 
+  background-repeat: repeat-x;
      
 }
 .
