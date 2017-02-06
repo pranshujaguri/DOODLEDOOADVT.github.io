@@ -39,36 +39,25 @@
     <![endif]-->
   </head>
   <style>
-    /*.logo img {
-        max-width:100%;
-    height: 45%;
-    width: 22%;
-    margin-top: -31px;
-    position: fixed;
-}
-      @media (max-width: 769px) {
-.logo img {
-  height: 29%;
-    margin-left: 33px;
-    margin-top: -5px;
-    width: 17%;
-    max-width: 100%;
-    
-          }
-      }*/
+      .head1 {
+		/*z-index: 0;*/
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 0 !important;
+	}
+  
       
        @media (max-width: 769px) {
            #viewport .smoke {
    /* margin-right: 400px;*/
     margin-left: -80px;
-  position: absolute;
+/*  position: absolute;*/
   width: 200px;
   height: 200px;
   background:url('./Images/smoke-texture.png') no-repeat;
-  bottom: 120px; 
-              
- 
-     
+  bottom: 130px; 
+
 }
       }
            
@@ -185,15 +174,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          </div> <img class="head1" src="Images/nav_bg.png" alt="">
           <!-- LOGO -->     
-		  <!-- Image logo  -->
-        <a class="navbar-brand logo" href="index.html"><img src="./Images/favicon-32x32.png.gif" alt="logo"></a> 
-         <!-- <a class="navbar-brand logo imagesize" href="index.html">
+		  <!--Image logo-->
+        <!--<a class="navbar-brand logo" href="index.html"><img src="./Images/favicon-32x32.png.gif" alt="logo"></a> -->
+         <!--<a class="navbar-brand logo imagesize" href="index.html">
                 <img class="img-responsive" src="../Images/favicon-32x32.png.gif" alt="logo">
                 </a>-->
           
            <!-- Text logo  -->
-<!--            <a class="navbar-brand logo" href="index.html"><span>Rex</span></a>                      -->
+<!--<a class="navbar-brand logo" href="index.html"><span>Rex</span></a>-->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
@@ -217,15 +207,11 @@
     </nav> 
   </section>
   <!-- End menu section -->
-<div id="viewport" style="
-    margin-left: -3px;
-   
-">
-       <img class="img-responsive" src="./Images/aboutbg%20(1).jpg" alt="img" style="
-    margin-left: 3px;
-    margin-top:100px;
-">
-          </div>
+<div class="classanimate">
+<div id="viewport">
+       <img class="img-responsive" src="./Images/aboutbg%20(1).jpg" alt="img" style="">
+</div>
+</div>
   <!-- Start Portfolio section -->
   <section id="portfolio">
     <div class="container">
@@ -416,7 +402,10 @@
  
   <!-- Start Google Map -->
   <section id="google-map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>  
+  <div id="map1">
+  
+ <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>  -->
+  </div>
   </section>
   <!-- End Google Map -->
 
@@ -436,7 +425,7 @@
                 <a class="google-plus" href="#"><span class="fa fa-google-plus"></span></a>
                 <a class="youtube" href="#"><span class="fa fa-youtube"></span></a>
                 <a class="linkedin" href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fprofile%2Fview%3Fid%3D23277124%26trk%3Dhp-identity-name"><span class="fa fa-linkedin"></span></a>
-                <a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
+                <a class="pinterest-p" href="https://in.pinterest.com/yesprabhakar/"><span class="fa fa-pinterest-p"></span></a>
               </div>
             </div>
           </div>
@@ -455,7 +444,7 @@
   <!-- Bootstrap -->
   <script src="./js/bootstrap.js"></script>
   <!-- Slick Slider -->
-  <script type="text/javascript" src="./js/slick.js"></script>
+  <script type="text/javascript" src="/js/slick.js"></script>
   <!-- Counter -->
   <script type="text/javascript" src="./js/waypoints.js"></script>
   <script type="text/javascript" src="./js/jquery.counterup.js"></script>
@@ -464,6 +453,7 @@
 
   <!-- Custom js -->
   <script type="text/javascript" src="./js/custom.js"></script>
+   <script type="text/javascript" src="./js/map.js"></script>
     
   </body>
 </html>
